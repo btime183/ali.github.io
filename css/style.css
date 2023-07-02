@@ -1,0 +1,204 @@
+/* website fonts started */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Oswald:wght@700&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h6,
+li {
+  font-family: 'Belanosima', sans-serif;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* website fonts ended */
+
+/* body styling */
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*navbar styling started */
+.nav-item a {
+  font-family: 'Belanosima', sans-serif;
+  font-size: larger;
+  color: white;
+}
+
+/*navbar styling ended */
+
+/* main hero image start*/
+
+
+
+
+::selection {
+  background: var(--primary_color);
+  color: #FFFFFF;
+}
+
+.btn {
+  border-radius: 2px;
+  padding: 10px 30px;
+  font-family: var(--primary_font);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.4s all;
+  overflow: hidden;
+}
+
+.btn.d2c_primary_btn {
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.btn.d2c_primary_btn span {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 15;
+}
+
+.btn.d2c_primary_btn::after {
+  content: '';
+  background: linear-gradient(90deg, #e8631c, #141515 88.67%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  z-index: 10;
+  transition: 0.4s all;
+}
+
+.btn.d2c_primary_btn:hover {
+  border: 2px solid #FFFFFF;
+  transition: 0.4s all;
+}
+
+.btn.d2c_primary_btn:hover::after {
+  left: -200px;
+  transition: 0.4s all;
+}
+
+.btn.d2c_secondary_btn {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+}
+
+.btn.d2c_secondary_btn span {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 15;
+}
+
+.btn.d2c_secondary_btn::after {
+  content: '';
+  background: linear-gradient(90deg, #e8631c, #141515 88.67%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -200px;
+  border-radius: 2px;
+  z-index: 10;
+  transition: 0.4s all;
+}
+
+.btn.d2c_secondary_btn:hover {
+  border: 2px solid transparent;
+  transition: 0.4s all;
+}
+
+.btn.d2c_secondary_btn:hover::after {
+  left: 0;
+  transition: 0.4s all;
+}
+
+.d2c_hero {
+  background-color: var(--primary_color);
+  background-image: url('../images/hero_bg.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.d2c_hero .d2c_hero_title {
+  font-family: var(--primary_font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.d2c_hero .d2c_hero_text {
+  font-family: var(--primary_font);
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.d2c_hero .d2c_hero_img {
+  position: absolute;
+  width: 110%;
+}
+
+.d2c_hero .d2c_hero_btn a {
+  margin-right: 15px;
+}
+
+/* main hero image end*/
+
+/* statistics section start */
+
+
+
+
+
+/* statistics section end */
+.newsletter {
+  padding: 80px 0;
+}
+
+.newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter .content h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+
+.newsletter .content .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+
+.newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #243c4f;
+}
+
+.newsletter .content .btn {
+  min-height: 50px;
+  border-radius: 0;
+  background: #243c4f;
+  color: #fff;
+  font-weight: 600;
+}
